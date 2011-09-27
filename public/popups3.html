@@ -40,7 +40,12 @@ name="prompt">here</a> for a prompt pop-up.</p>
 <input type='submit' value='Prompt Button' id='prompt_button'
 onclick=
 "msg = 'You clicked the prompt button.'; input = prompt(msg); update_result(msg + ' ' + input);" />
-<h2>Result</h2>
+<h1>Non-Popup Control</h1>
+<p>Click <a id="control" href="#" onclick=
+"msg = 'You clicked the control link.'; update_result(msg);" name=
+"control">here</a> for a non-popup control.</p>
+<hr />
+<h1>Result</h1>
 <p id="result">Result will appear here.</p>
 </div>
 </body>
