@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.3.6), see www.w3.org" />
+<title>Pop-Ups</title>
+
+<script type="text/javascript">
+//<![CDATA[
+function update_result(result_text) {
+  result = document.getElementById('result');
+  result.innerHTML = result_text;
+}
+//]]>
+</script>
+</head>
+<body>
+<div id="popups" class="content">
+<h1>Alert</h1>
+<p>Click <a id="alert" href="#" onclick=
+"msg = 'You clicked the alert link.'; alert(msg); update_result(msg);"
+name="alert">here</a> for an alert pop-up.</p>
+<br />
+<input type='submit' value='Alert Button' id='alert_button'
+onclick="msg = 'You clicked the alert button.'; alert(msg); update_result(msg);" />
+<h1>Confirm</h1>
+<p>Click <a id="confirm" href="#" onclick=
+"msg = 'You clicked the confirm link.'; confirm(msg); update_result(msg);"
+name="confirm">here</a> for a confirm pop-up.</p>
+<br />
+<input type='submit' value='Confirm Button' id='confirm_button'
+onclick=
+"msg = 'You clicked the confirm button.'; confirm(msg); update_result(msg);" />
+<h1>Prompt</h1>
+<p>Click <a id="prompt" href="#" onclick=
+"msg = 'You clicked the prompt link.'; input = prompt(msg); update_result(msg + ' ' + input);"
+name="prompt">here</a> for a prompt pop-up.</p>
+<br />
+<input type='submit' value='Prompt Button' id='prompt_button'
+onclick=
+"msg = 'You clicked the prompt button.'; input = prompt(msg); update_result(msg + ' ' + input);" />
+<h2>Result</h2>
+<p id="result">Result will appear here.</p>
+</div>
+</body>
+</html>
