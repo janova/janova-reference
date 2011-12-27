@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.3.6), see www.w3.org" />
+<title>Select List Events</title>
+
+<script type="text/javascript">
+//<![CDATA[
+function update_result(id, result_text) {
+  var rp;
+  rp = document.getElementById(id);
+  rp.innerHTML = result_text;
+}
+//]]>
+</script>
+</head>
+<body>
+<div id="selectlist" class="content">
+<h1>Select List Events</h1>
+<form action="">
+<fieldset><legend>Favorite fantasy book</legend>
+<p>This select list has focus, change, and blur events that update
+the events paragraph below.</p>
+<label for="book">Name:</label> <select name="book" id="book"
+onfocus=
+"msg = 'The focus event was fired.'; update_result('focus', msg);"
+onchange=
+"msg = 'The change event was fired.'; update_result('change', msg);"
+onblur=
+"msg = 'The blur event was fired.'; update_result('blur', msg);">
+<option id="alexander">Taran Wanderer</option>
+<option id="tolkien">The Hobbit</option>
+<option id="rowling">Harry Potter and the Sorcerer's Stone</option>
+</select></fieldset>
+</form>
+<hr />
+<h1>Events</h1>
+<p id="focus">The focus event has not yet been fired.</p>
+<p id="change">The change event has not yet been fired.</p>
+<p id="blur">The blur event has not yet been fired.</p>
+</div>
+</body>
+</html>
