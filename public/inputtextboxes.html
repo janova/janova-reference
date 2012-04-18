@@ -6,6 +6,17 @@
 "HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.3.6), see www.w3.org" />
 <title>Input - text and password</title>
 
+<script language="JavaScript" type="text/javascript">
+<!--
+function makeDate() {
+   now = new Date();
+   return  (now.getMonth()+1) + '/' + now.getDate() + '/' + now.getFullYear() ;
+}
+
+
+//--></script>
+
+
 <style type="text/css" media="all">
 /*<![CDATA[*/
         
@@ -24,13 +35,23 @@
 /*]]>*/
 </style>
 </head>
-<body>
-<form action="">
+<body onLoad="document.myForm.Date.value = makeDate()">
+<form action="" name="myForm">
 <fieldset><legend>Text and Password</legend> <label for=
 "username">Username:</label> <input name="username" id="username"
 value="Some Text" /> <label for="password">Password:</label>
 <input type="password" name="password" id="password" value=
 "Password" /></fieldset>
+<label for="date">Date:</label> <input type="text"  maxlength="10"name="Date" value=""/>
+<label for="date two">Date Two:</label> <input type="text" size="5" maxlength="10" name="DateTwo" value="../../...."/>
+<label for="Phone">Phone:</label> <input type="text" size="6" maxlength="12" name="Phone" value="...-...-...."/>
+<label for="Phone Two">Phone Two:</label> <input type="text" size="11" maxlength="12" name="PhoneTwo" value="555-555-5555"/>
+<label for="Postal Code">Postal Code:</label> <input type="text" size="6" maxlength="10" name="PostalCode" value=".....-...."/>
+<label for="Postal Code Two">Postal Code Two:</label> <input type="text" size="9" maxlength="10" name="PostalCodeTwo" value="55555-5555"/>
+<label for="SSN">SSN:</label> <input type="text" size="6" maxlength="11" name="SSN" value="...-..-...."/>
+<label for="SSN two">SSN Two:</label> <input type="text" size="10" maxlength="11" name="SSNTwo" value="123-45-6789"/>
+<label for="TaxID">Tax ID:</label> <input type="text" size="6" maxlength="10" name="TaxID" value="..-......."/>
+<label for="TaxID two">Tax ID Two:</label> <input type="text" size="9" maxlength="10" name="TaxIDTwo" value="12-3456789"/>
 </form>
 </body>
 </html>
