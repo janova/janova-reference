@@ -27,29 +27,29 @@
         var ssnMask = new InputMask("###-##-####", "SSN");
         var tinMask = new InputMask("##-#######", "TIN");
     
-        //Set up the NumberMasks
-        var decimalSeparator = ".";
-        var groupSeparator = ",";
-        
-        var numParser1 = new NumberParser(0, decimalSeparator, groupSeparator, true);
-        var numMask1 = new NumberMask(numParser1, "num1");
-
-        var numParser2 = new NumberParser(-1, decimalSeparator, groupSeparator, true);
-        numParser2.negativeParenthesis = true;
-        var numMask2 = new NumberMask(numParser2, "num2");
-        numMask2.leftToRight = true;
-    
-        var numParser3 = new NumberParser(2, decimalSeparator, groupSeparator, true);
-        var numMask3 = new NumberMask(numParser3, "num3", 6);
-        numMask3.allowNegative = false;
-        numMask3.leftToRight = true;
-    
-        var numParser4 = new NumberParser(2, decimalSeparator, groupSeparator, true);
-        numParser4.currencySymbol = "$"
-        numParser4.useCurrency = true;
-        numParser4.negativeParenthesis = true;
-        numParser4.currencyInside = true;
-        var numMask4 = new NumberMask(numParser4, "num4", 6);
+        ////Set up the NumberMasks
+        //var decimalSeparator = ".";
+        //var groupSeparator = ",";
+        //
+        //var numParser1 = new NumberParser(0, decimalSeparator, groupSeparator, true);
+        //var numMask1 = new NumberMask(numParser1, "num1");
+        //
+        //var numParser2 = new NumberParser(-1, decimalSeparator, groupSeparator, true);
+        //numParser2.negativeParenthesis = true;
+        //var numMask2 = new NumberMask(numParser2, "num2");
+        //numMask2.leftToRight = true;
+        //
+        //var numParser3 = new NumberParser(2, decimalSeparator, groupSeparator, true);
+        //var numMask3 = new NumberMask(numParser3, "num3", 6);
+        //numMask3.allowNegative = false;
+        //numMask3.leftToRight = true;
+        //
+        //var numParser4 = new NumberParser(2, decimalSeparator, groupSeparator, true);
+        //numParser4.currencySymbol = "$"
+        //numParser4.useCurrency = true;
+        //numParser4.negativeParenthesis = true;
+        //numParser4.currencyInside = true;
+        //var numMask4 = new NumberMask(numParser4, "num4", 6);
     
         //Set up the DateMasks
         var errorMessage = "Invalid entry: ${value}. Expected format: ${mask}";
@@ -88,7 +88,7 @@
     <img src="./images/JANOVA_logo.jpeg" alt="Automated Testing in the Cloud" />
     <h1>Examples Using Masks </h1>
     <br>
-    <fieldset><legend><b>Using NumberMask</b></legend>
+    <!--<fieldset><legend><b>Using NumberMask</b></legend>
     <table>
         <tr>
             <td width="75px">Int. Size</td>
@@ -131,7 +131,7 @@
             <td><input type="text" name="num4" style="text-align:right"></td>
         </tr>
     </table>
-    </fieldset>
+    </fieldset>-->
     <fieldset><legend><b>Using DateMask</b></legend>
     <table>
         <tr>

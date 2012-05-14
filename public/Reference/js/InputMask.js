@@ -140,14 +140,14 @@ function InputMask(fields, control, keyPressFunction, keyDownFunction, keyUpFunc
 
     //Validate the control
     control = validateControlToMask(control);
-    if (!control) {
-        alert("Invalid control to mask");
-        return;
-    } else {
+    //if (!control) {
+    //    alert("Invalid control to mask");
+    //    return;
+    //} else {
         this.control = control;
         prepareForCaret(this.control);
         this.control.supportsCaret = isCaretSupported(this.control);
-    }
+    //}
     
     //Set the control's reference to the mask descriptor
     this.control.mask = this;
