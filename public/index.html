@@ -96,5 +96,23 @@ with an <code>option</code> that has no content.</li>
 <li><a href="nestedframes1.html">Nested frames</a> - Multiple
 levels of nesting</li>
 </ul>
+<h3>Formatted Fields</h3>
+<li> <a href="Reference/sample_mask.html">Sample Masked Fields</a>
+</li>
+<li> <a href="Reference/sample_rich_client_table.html">Sample Table Fields</a>
+</li>
+<h3>Button Workaround</h3>
+<script type="text/javascript">
+function copyText()
+{
+document.getElementById("field2").value=document.getElementById("field1").value;
+}
+</script>
+
+Field1: <input type="text" id="field1" value="Janova" /><br />
+Field2: <input type="text" id="field2" />
+<br /><br />
+<button onclick="copyText()">Copy Text</button>
+
 </body>
 </html>
