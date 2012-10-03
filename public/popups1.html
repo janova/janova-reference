@@ -5,6 +5,7 @@
 <meta name="generator" content=
 "HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.3.6), see www.w3.org" />
 <title>Pop-Ups</title>
+<script type="text/javascript" src="alert.js"></script>
 </head>
 <body>
 <div id="popups" class="content">
@@ -30,5 +31,12 @@
   <input type='submit' value='Prompt Button' id='prompt_button' onclick=
   "prompt('You clicked the prompt button.');"/>
 </div>
+
+<script type="text/javascript">
+window.onbeforeunload = function() {
+     return "Are you sure you want to leave this page?";
+}
+</script>
+
 </body>
 </html>
