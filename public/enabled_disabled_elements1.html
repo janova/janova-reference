@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.3.6), see www.w3.org" />
+<title>30 Second Looping</title>
+<script type="text/javascript">
+function showIt() {
+element = document.getElementById("disabled_input_1"); element.removeAttribute("disabled"); element.placeholder = "I'm enabled!";
+}
+setTimeout("showIt()",20000);
+</script>
+</head>
+<body>
+	<h1> 30 Second Looping </h1>
+		<h3>Element Becomes Enabled After 20 Seconds (disabled="disabled")</h3> 
+			<form>
+				<input id="disabled_input_1" disabled="disabled" placeholder="I'm disabled!">
+			</form>
+</body>
+</html>
